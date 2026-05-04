@@ -1,0 +1,276 @@
+/* ============================================
+   HERO SECTION
+   ============================================ */
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  padding: 8rem 0 5rem;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  /* Expanded beyond the section so the parallax shift has room to move */
+  inset: -10% -5%;
+  background-image: url('assets/hero-bg.webp');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  will-change: transform;
+  /* Smooth return on mouse-leave */
+  transition: transform 0.6s ease;
+}
+
+/* Subtle grid texture sits on top of the photo */
+.hero-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.hero-overlay-right {
+  position: absolute;
+  inset: 0;
+  /* Stronger left coverage so text remains fully readable over the photo */
+  background: linear-gradient(
+    to right,
+    rgba(10,10,10,0.96) 0%,
+    rgba(10,10,10,0.80) 45%,
+    rgba(10,10,10,0.35) 75%,
+    rgba(10,10,10,0.10) 100%
+  );
+}
+
+.hero-overlay-bottom {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, var(--bg) 0%, transparent 55%);
+}
+
+/* Extra dark-tint on top of the photo for overall depth */
+.hero-overlay-photo {
+  position: absolute;
+  inset: 0;
+  background: rgba(5, 5, 5, 0.38);
+  pointer-events: none;
+}
+
+.hero-glow-1 {
+  position: absolute;
+  top: 5rem;
+  right: 10%;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 50%;
+  background: rgba(255,107,44,0.06);
+  filter: blur(80px);
+}
+
+.hero-glow-2 {
+  position: absolute;
+  bottom: 10rem;
+  left: 5%;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  background: rgba(230,82,20,0.04);
+  filter: blur(60px);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 5fr 4fr 3fr;
+  gap: 3rem;
+  align-items: end;
+}
+
+.hero-left {
+  margin-bottom: 2.5rem;
+}
+
+.hero h1 {
+  font-size: clamp(3rem, 7vw, 4.5rem);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  margin-bottom: 0.4rem;
+}
+
+.hero-brand-sub {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--brand-500);
+  opacity: 0.85;
+  margin-bottom: 1.75rem;
+}
+
+.hero-subtitle {
+  font-size: 1.125rem;
+  font-weight: 300;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 28rem;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Hero center stats */
+.hero-stats {
+  border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  padding: 0 3rem;
+  margin-bottom: 4rem;
+}
+
+.hero-stat {
+  margin-bottom: 2rem;
+}
+
+.hero-stat:last-child {
+  margin-bottom: 0;
+}
+
+.hero-stat-number {
+  font-size: 2.25rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #fff;
+  font-variant-numeric: tabular-nums;
+}
+
+.hero-stat-label {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+}
+
+/* Hero trust card */
+.hero-trust-card {
+  background: rgba(10,10,10,0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--border);
+  border-radius: 1.75rem;
+  padding: 1.5rem;
+  margin-bottom: 4rem;
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+.trust-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.trust-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: rgba(255,107,44,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trust-card-header h4 {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.trust-card-header span {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.trust-card-quote {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+  font-style: italic;
+}
+
+.trust-card-footer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+}
+
+.trust-card-footer span {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* Hero bottom bar */
+.hero-bottom-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--border);
+  padding-top: 2rem;
+  margin-top: 1rem;
+}
+
+.hero-bottom-text {
+  font-size: clamp(4rem, 8vw, 5.5rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  user-select: none;
+}
+
+.hero-bottom-tags {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 0.875rem;
+  color: var(--text-dim);
+}
+
+.hero-bottom-tags .dot {
+  width: 0.25rem;
+  height: 0.25rem;
+  background: #333;
+  border-radius: 50%;
+}
+
+/* ============================================
+   HERO PARALLAX
+   ============================================ */
+
+/* When JS is active the bg transitions fast (mouse move) */
+.hero-bg.parallax-active {
+  transition: transform 0.08s linear;
+}
+
+/* Reduced-motion: freeze the parallax completely */
+@media (prefers-reduced-motion: reduce) {
+  .hero-bg,
+  .hero-bg.parallax-active {
+    transition: none !important;
+    transform: none !important;
+  }
+}

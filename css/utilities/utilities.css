@@ -1,0 +1,111 @@
+/* ============================================
+   UTILITIES
+   ============================================ */
+
+.gradient-text {
+  background: linear-gradient(to right, var(--brand-500), #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-outline {
+  -webkit-text-stroke: 1px rgba(255,255,255,0.06);
+  color: transparent;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, rgba(255,107,44,0.15), rgba(255,107,44,0.05));
+  border: 1px solid rgba(255,107,44,0.25);
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--brand-400);
+}
+
+.section-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--brand-500);
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  font-size: clamp(2.25rem, 5vw, 3rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.section-desc {
+  font-size: 1.125rem;
+  font-weight: 300;
+  color: var(--text-secondary);
+  max-width: 42rem;
+  line-height: 1.7;
+}
+
+/* ============================================
+   BRAND LOCKUP — ícono sol + PAPOTE / Instalación de paneles
+   ============================================ */
+
+.brand-lockup {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6em;
+  line-height: 1;
+}
+
+.brand-lockup-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.92;
+}
+
+.brand-lockup-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+}
+
+.brand-lockup-name {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1;
+}
+
+.brand-lockup-name .sol  { color: var(--brand-500); }
+.brand-lockup-name .cuba { color: #fff; }
+
+.brand-lockup-sub {
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--brand-500);
+  opacity: 0.8;
+  margin-top: 2px;
+  line-height: 1;
+}
+
+.section-divider {
+  display: block;
+  width: 600px;
+  max-width: 80%;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(255,255,255,0.08), transparent);
+  margin: 0 auto;
+}

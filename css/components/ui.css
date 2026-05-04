@@ -1,0 +1,77 @@
+/* ============================================
+   WHATSAPP FLOAT
+   ============================================ */
+
+.wa-float {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 90;
+  background: #16a34a;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(22,163,74,0.3);
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wa-float:hover {
+  background: #15803d;
+  transform: scale(1.1);
+  box-shadow: 0 10px 30px rgba(22,163,74,0.45);
+}
+
+.wa-float-tooltip {
+  position: absolute;
+  right: calc(100% + 0.75rem);
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(10,10,10,0.9);
+  border: 1px solid var(--border-light);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.wa-float:hover .wa-float-tooltip {
+  opacity: 1;
+}
+
+/* ============================================
+   TOAST
+   ============================================ */
+
+.toast {
+  position: fixed;
+  bottom: 6rem;
+  right: 2rem;
+  background: rgba(10,10,10,0.95);
+  border: 1px solid var(--border-light);
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+  z-index: 200;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.4s ease;
+  pointer-events: none;
+  border-left: 3px solid var(--brand-500);
+}
+
+.toast.visible {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}

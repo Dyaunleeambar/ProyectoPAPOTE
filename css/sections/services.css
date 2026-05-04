@@ -1,0 +1,110 @@
+/* ============================================
+   SERVICES SECTION
+   ============================================ */
+
+.services {
+  padding: 8rem 0;
+  position: relative;
+}
+
+.services-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.services-header .section-desc {
+  margin: 0 auto;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.service-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 1.75rem;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.service-card:hover {
+  border-color: rgba(255,107,44,0.2);
+  box-shadow: 0 0 40px rgba(255,107,44,0.06);
+}
+
+.service-card-visual {
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  position: relative;
+}
+
+.service-card-visual .sc-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+  transition: transform 0.7s ease;
+}
+
+.service-card:hover .sc-bg {
+  transform: scale(1.08);
+}
+
+.service-card-tag {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.service-card-body {
+  padding: 2rem;
+}
+
+.service-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.service-card-icon {
+  background: rgba(255,107,44,0.1);
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+  flex-shrink: 0;
+}
+
+.service-card h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.service-card-body > p {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+.service-card-features {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.service-card-features li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.service-card-features li svg {
+  flex-shrink: 0;
+}

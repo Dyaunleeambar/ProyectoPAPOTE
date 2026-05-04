@@ -1,0 +1,33 @@
+/* ============================================
+   PAPOTE — CSS ENTRY POINT
+   Importa todos los módulos en orden de cascada.
+   El HTML solo necesita enlazar este archivo.
+   ============================================ */
+
+/* 1. Base — variables, reset y animaciones */
+@import url('./base/variables.css');
+@import url('./base/animations.css');
+
+/* 2. Utilities — clases reutilizables globales */
+@import url('./utilities/utilities.css');
+
+/* 3. Components — elementos UI reutilizables */
+@import url('./components/buttons.css');
+@import url('./components/ui.css');
+
+/* 4. Layout — estructura de página y navegación */
+@import url('./layout/navigation.css');
+@import url('./layout/hero.css');
+@import url('./layout/footer.css');
+
+/* 5. Sections — cada sección del sitio */
+@import url('./sections/about.css');
+@import url('./sections/services.css');
+@import url('./sections/how-it-works.css');
+@import url('./sections/benefits.css');
+@import url('./sections/testimonials.css');
+@import url('./sections/booking.css');
+@import url('./sections/agendar.css');
+
+/* 6. Responsive — media queries al final para que sobreescriban */
+@import url('./layout/responsive.css');
