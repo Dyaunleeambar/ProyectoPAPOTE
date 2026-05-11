@@ -3,7 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PAPOTE — Instalación profesional de sistemas fotovoltaicos en Cuba. Paneles solares, inversores híbridos y baterías de respaldo para tu hogar.">
+  <meta name="theme-color" content="#c89830">
+  <meta property="og:title" content="PAPOTE — Paneles solares en Cuba">
+  <meta property="og:description" content="Sistemas de energía solar fotovoltaica con garantía. Más de 150 hogares con energía limpia.">
+  <meta property="og:type" content="website">
   <title>PAPOTE — Instalación de paneles solares</title>
+  
+  <!-- Preconnect a Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <!-- CSS — punto de entrada único -->
@@ -17,17 +26,45 @@
   <nav class="nav-pill" id="mainNav">
     <a href="#hero" class="nav-brand brand-lockup">
       <span class="brand-lockup-icon">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--brand-500)" stroke-width="1.5" stroke-linecap="round">
-          <circle cx="12" cy="12" r="4"/>
-          <line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/>
-          <line x1="4.22" y1="4.22" x2="6.34" y2="6.34"/><line x1="17.66" y1="17.66" x2="19.78" y2="19.78"/>
-          <line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/>
-          <line x1="4.22" y1="19.78" x2="6.34" y2="17.66"/><line x1="17.66" y1="6.34" x2="19.78" y2="4.22"/>
+        <svg width="28" height="28" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="pFront" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:var(--brand-400);stop-opacity:1" />
+              <stop offset="100%" style="stop-color:var(--brand-500);stop-opacity:1" />
+            </linearGradient>
+            <linearGradient id="pTop" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:var(--brand-600);stop-opacity:1" />
+              <stop offset="100%" style="stop-color:var(--brand-700);stop-opacity:1" />
+            </linearGradient>
+            <linearGradient id="pSide" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:var(--brand-500);stop-opacity:1" />
+              <stop offset="100%" style="stop-color:var(--brand-600);stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <g>
+            <!-- Barra vertical izquierda -->
+            <polygon points="12,18 24,18 24,90 12,90" fill="url(#pFront)" stroke="#8b7355" stroke-width="0.3"/>
+            <polygon points="12,18 20,10 32,10 24,18" fill="url(#pTop)" stroke="#6b5444" stroke-width="0.3"/>
+            <polygon points="24,18 32,10 32,82 24,90" fill="url(#pSide)" stroke="#8b7355" stroke-width="0.3"/>
+            <!-- Barra superior -->
+            <polygon points="24,28 56,28 56,42 24,42" fill="url(#pFront)" stroke="#8b7355" stroke-width="0.3"/>
+            <polygon points="24,28 32,20 64,20 56,28" fill="url(#pTop)" stroke="#6b5444" stroke-width="0.3"/>
+            <polygon points="56,28 64,20 64,34 56,42" fill="url(#pSide)" stroke="#8b7355" stroke-width="0.3"/>
+            <!-- Lado derecho conexión -->
+            <polygon points="56,28 68,28 68,60 56,60" fill="url(#pFront)" stroke="#8b7355" stroke-width="0.3"/>
+            <polygon points="56,28 64,20 76,20 68,28" fill="url(#pTop)" stroke="#6b5444" stroke-width="0.3"/>
+            <polygon points="68,28 76,20 76,52 68,60" fill="url(#pSide)" stroke="#8b7355" stroke-width="0.3"/>
+            <!-- Cierre inferior del ojo -->
+            <polygon points="56,55 68,55 68,68 56,68" fill="url(#pFront)" stroke="#8b7355" stroke-width="0.3"/>
+            <polygon points="56,55 64,47 76,47 68,55" fill="url(#pTop)" stroke="#6b5444" stroke-width="0.3"/>
+            <polygon points="68,55 76,47 76,60 68,68" fill="url(#pSide)" stroke="#8b7355" stroke-width="0.3"/>
+          </g>
         </svg>
       </span>
       <span class="brand-lockup-text">
         <span class="brand-lockup-name nav-brand-name">PAPOTE</span>
-        <span class="brand-lockup-sub nav-brand-sub">Inst. de paneles</span>
+        <span class="brand-lockup-sub nav-brand-sub">Sistemas</span>
+        <span class="brand-lockup-sub nav-brand-sub-2">solares</span>
       </span>
     </a>
     <div class="nav-links-desktop">
@@ -57,17 +94,40 @@
     </button>
     <div class="nav-brand brand-lockup">
       <span class="brand-lockup-icon">
-        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--brand-500)" stroke-width="1.5" stroke-linecap="round">
-          <circle cx="12" cy="12" r="4"/>
-          <line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/>
-          <line x1="4.22" y1="4.22" x2="6.34" y2="6.34"/><line x1="17.66" y1="17.66" x2="19.78" y2="19.78"/>
-          <line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/>
-          <line x1="4.22" y1="19.78" x2="6.34" y2="17.66"/><line x1="17.66" y1="6.34" x2="19.78" y2="4.22"/>
+        <svg width="36" height="36" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="pFront2" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:var(--brand-400);stop-opacity:1" />
+              <stop offset="100%" style="stop-color:var(--brand-500);stop-opacity:1" />
+            </linearGradient>
+            <linearGradient id="pTop2" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:var(--brand-600);stop-opacity:1" />
+              <stop offset="100%" style="stop-color:var(--brand-700);stop-opacity:1" />
+            </linearGradient>
+            <linearGradient id="pSide2" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:var(--brand-500);stop-opacity:1" />
+              <stop offset="100%" style="stop-color:var(--brand-600);stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <g>
+            <polygon points="12,18 24,18 24,90 12,90" fill="url(#pFront2)" stroke="#8b7355" stroke-width="0.3"/>
+            <polygon points="12,18 20,10 32,10 24,18" fill="url(#pTop2)" stroke="#6b5444" stroke-width="0.3"/>
+            <polygon points="24,18 32,10 32,82 24,90" fill="url(#pSide2)" stroke="#8b7355" stroke-width="0.3"/>
+            <polygon points="24,28 56,28 56,42 24,42" fill="url(#pFront2)" stroke="#8b7355" stroke-width="0.3"/>
+            <polygon points="24,28 32,20 64,20 56,28" fill="url(#pTop2)" stroke="#6b5444" stroke-width="0.3"/>
+            <polygon points="56,28 64,20 64,34 56,42" fill="url(#pSide2)" stroke="#8b7355" stroke-width="0.3"/>
+            <polygon points="56,28 68,28 68,60 56,60" fill="url(#pFront2)" stroke="#8b7355" stroke-width="0.3"/>
+            <polygon points="56,28 64,20 76,20 68,28" fill="url(#pTop2)" stroke="#6b5444" stroke-width="0.3"/>
+            <polygon points="68,28 76,20 76,52 68,60" fill="url(#pSide2)" stroke="#8b7355" stroke-width="0.3"/>
+            <polygon points="56,55 68,55 68,68 56,68" fill="url(#pFront2)" stroke="#8b7355" stroke-width="0.3"/>
+            <polygon points="56,55 64,47 76,47 68,55" fill="url(#pTop2)" stroke="#6b5444" stroke-width="0.3"/>
+            <polygon points="68,55 76,47 76,60 68,68" fill="url(#pSide2)" stroke="#8b7355" stroke-width="0.3"/>
+          </g>
         </svg>
       </span>
       <span class="brand-lockup-text">
-        <span class="brand-lockup-name nav-brand-name" style="font-size:1.875rem;">PAPOTE</span>
-        <span class="brand-lockup-sub nav-brand-sub" style="font-size:0.85rem;letter-spacing:0.2em;">Inst. de paneles</span>
+        <span class="brand-lockup-name nav-brand-name brand-text-mobile">PAPOTE</span>
+        <span class="brand-lockup-sub nav-brand-sub brand-sub-mobile">Sistemas solares</span>
       </span>
     </div>
     <a href="#about" class="mobile-link">Nosotros</a>
@@ -75,7 +135,7 @@
     <a href="#how" class="mobile-link">Cómo funciona</a>
     <a href="#benefits" class="mobile-link">Beneficios</a>
     <a href="#contact" class="mobile-link">Contacto</a>
-    <a href="#contact" class="btn-primary mobile-link" style="margin-top:1rem;padding:0.75rem 2rem;font-size:1.125rem;">Agendar gratis</a>
+    <a href="#contact" class="btn-primary mobile-link mobile-cta-spacing mobile-cta-button">Agendar gratis</a>
   </div>
 
   <main>
@@ -83,7 +143,7 @@
          HERO
          ============================================ -->
     <section class="hero" id="hero">
-      <div class="hero-bg" id="heroBg" style="background-image:url('assets/images/hero-bg.webp');"></div>
+      <div class="hero-bg" id="heroBg" style="background-image: url('assets/images/hero-bg.webp');"></div>
       <div class="hero-overlay-photo"></div>
       <div class="hero-overlay-right"></div>
       <div class="hero-overlay-bottom"></div>
@@ -95,18 +155,18 @@
 
           <!-- Izquierda -->
           <div class="hero-left fade-up">
-            <div class="badge" style="margin-bottom:2rem;">
-              <span style="position:relative;display:inline-flex;width:0.625rem;height:0.625rem;">
-                <span style="position:absolute;inset:0;border-radius:50%;background:var(--brand-500);animation:ping 1s cubic-bezier(0,0,0.2,1) infinite;"></span>
-                <span style="position:relative;width:0.625rem;height:0.625rem;background:var(--brand-500);border-radius:50%;"></span>
+            <div class="badge badge-bottom-spacing">
+              <span class="ping-dot">
+                <span class="ping-dot-pulse"></span>
+                <span class="ping-dot-inner"></span>
               </span>
               Energía solar en Cuba
             </div>
 
             <h1>
-              <span style="color:var(--brand-500);">PAPOTE</span>
+              <span class="brand-color">PAPOTE</span>
             </h1>
-            <div class="hero-brand-sub">Instalación de paneles</div>
+            <div class="hero-brand-sub">Sistemas solares</div>
             <p class="hero-subtitle">
               Instalación de sistemas fotovoltaicos a medida. Convertimos la energía del sol en tu mayor ahorro y tranquilidad ante los apagones.
             </p>
@@ -158,13 +218,13 @@
                   <span>Respaldo total</span>
                 </div>
               </div>
-              <p class="trust-card-quote">"No nos vamos hasta que cada panel esté funcionando perfecto. Así de simple."</p>
+              <p class="trust-card-quote">"No nos vamos hasta que cada parte del sistema esté funcionando perfectamente. Así de simple."</p>
               <div class="trust-card-footer">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--brand-500)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                   <path d="m9 12 2 2 4-4"/>
                 </svg>
-                <span>Garantía de 6 meses en el sistema y paneles</span>
+                <span>Garantía de 6 meses para cada componente del sistema</span>
               </div>
             </div>
           </div>
@@ -189,7 +249,7 @@
          ============================================ -->
     <section class="about" id="about">
       <span class="section-divider"></span>
-      <div class="container" style="margin-top:8rem;">
+      <div class="container section-top-spacing">
         <div class="about-grid">
           <div class="about-image-wrap reveal">
             <div class="about-image">
@@ -202,27 +262,50 @@
             </div>
             <div class="about-floating-badge brand-lockup">
               <span class="brand-lockup-icon">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--brand-500)" stroke-width="1.5" stroke-linecap="round">
-                  <circle cx="12" cy="12" r="4"/>
-                  <line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/>
-                  <line x1="4.22" y1="4.22" x2="6.34" y2="6.34"/><line x1="17.66" y1="17.66" x2="19.78" y2="19.78"/>
-                  <line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/>
-                  <line x1="4.22" y1="19.78" x2="6.34" y2="17.66"/><line x1="17.66" y1="6.34" x2="19.78" y2="4.22"/>
+                <svg width="32" height="32" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="pFront3" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" style="stop-color:var(--brand-400);stop-opacity:1" />
+                      <stop offset="100%" style="stop-color:var(--brand-500);stop-opacity:1" />
+                    </linearGradient>
+                    <linearGradient id="pTop3" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" style="stop-color:var(--brand-600);stop-opacity:1" />
+                      <stop offset="100%" style="stop-color:var(--brand-700);stop-opacity:1" />
+                    </linearGradient>
+                    <linearGradient id="pSide3" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" style="stop-color:var(--brand-500);stop-opacity:1" />
+                      <stop offset="100%" style="stop-color:var(--brand-600);stop-opacity:1" />
+                    </linearGradient>
+                  </defs>
+                  <g>
+                    <polygon points="12,18 24,18 24,90 12,90" fill="url(#pFront3)" stroke="#8b7355" stroke-width="0.3"/>
+                    <polygon points="12,18 20,10 32,10 24,18" fill="url(#pTop3)" stroke="#6b5444" stroke-width="0.3"/>
+                    <polygon points="24,18 32,10 32,82 24,90" fill="url(#pSide3)" stroke="#8b7355" stroke-width="0.3"/>
+                    <polygon points="24,28 56,28 56,42 24,42" fill="url(#pFront3)" stroke="#8b7355" stroke-width="0.3"/>
+                    <polygon points="24,28 32,20 64,20 56,28" fill="url(#pTop3)" stroke="#6b5444" stroke-width="0.3"/>
+                    <polygon points="56,28 64,20 64,34 56,42" fill="url(#pSide3)" stroke="#8b7355" stroke-width="0.3"/>
+                    <polygon points="56,28 68,28 68,60 56,60" fill="url(#pFront3)" stroke="#8b7355" stroke-width="0.3"/>
+                    <polygon points="56,28 64,20 76,20 68,28" fill="url(#pTop3)" stroke="#6b5444" stroke-width="0.3"/>
+                    <polygon points="68,28 76,20 76,52 68,60" fill="url(#pSide3)" stroke="#8b7355" stroke-width="0.3"/>
+                    <polygon points="56,55 68,55 68,68 56,68" fill="url(#pFront3)" stroke="#8b7355" stroke-width="0.3"/>
+                    <polygon points="56,55 64,47 76,47 68,55" fill="url(#pTop3)" stroke="#6b5444" stroke-width="0.3"/>
+                    <polygon points="68,55 76,47 76,60 68,68" fill="url(#pSide3)" stroke="#8b7355" stroke-width="0.3"/>
+                  </g>
                 </svg>
               </span>
               <span class="brand-lockup-text">
-                <span class="brand-lockup-name name" style="font-size:1.25rem;"><span style="color:var(--brand-500);">PAPOTE</span></span>
-                <span class="brand-lockup-sub sub" style="font-size:0.625rem;letter-spacing:0.15em;">Inst. de paneles</span>
+                <span class="brand-lockup-name name brand-text-about"><span class="brand-color">PAPOTE</span></span>
+                <span class="brand-lockup-sub sub brand-sub-about">Sistemas solares</span>
               </span>
             </div>
             <div class="about-deco-ring"><div></div></div>
           </div>
 
-          <div class="about-text reveal" style="transition-delay:0.1s;">
+          <div class="about-text reveal fade-delay-100">
             <span class="section-label">Nuestra historia</span>
             <h2 class="section-title">La energía del sol,<br><span class="gradient-text">por manos cubanas</span></h2>
             <p>
-              <strong>PAPOTE</strong> nació de la visión de un ingeniero cubano que vio en la energía solar la solución más inteligente para satisfacer las necesidades energ. Con formación especializada y una pasión inagotable, comenzamos instalando sistemas en nuestra comunidad.
+              <strong>PAPOTE</strong> nació de la visión de un ingeniero cubano que vio en la energía solar la solución más inteligente para satisfacer las necesidades energéticas. Con formación especializada y una pasión inagotable, comenzamos instalando sistemas en nuestra comunidad.
             </p>
             <p>
               Hoy, <strong>PAPOTE</strong> es sinónimo de confianza en instalación fotovoltaica. Supervisamos personalmente cada proyecto, desde el diseño hasta la puesta en marcha, asegurando que cada sistema funcione al máximo rendimiento.
@@ -286,7 +369,7 @@
          ============================================ -->
     <section class="services" id="services">
       <span class="section-divider"></span>
-      <div class="container" style="margin-top:8rem;">
+      <div class="container section-top-spacing">
         <div class="services-header reveal">
           <span class="section-label">Soluciones solares</span>
           <h2 class="section-title">Nuestros <span class="gradient-text">servicios</span></h2>
@@ -297,7 +380,7 @@
           <!-- Servicio 1 -->
           <div class="service-card reveal">
             <div class="service-card-visual">
-              <div class="sc-bg" style="background:linear-gradient(135deg,#1a0f05,#0d1117);display:flex;align-items:center;justify-content:center;">
+              <div class="sc-bg sc-bg-1">
                 <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="rgba(255,107,44,0.2)" stroke-width="1" stroke-linecap="round">
                   <rect x="3" y="4" width="18" height="12" rx="2"/>
                   <line x1="3" y1="10" x2="21" y2="10"/>
@@ -331,9 +414,9 @@
           </div>
 
           <!-- Servicio 2 -->
-          <div class="service-card reveal" style="transition-delay:0.08s;">
+          <div class="service-card reveal fade-delay-08s">
             <div class="service-card-visual">
-              <div class="sc-bg" style="background:linear-gradient(135deg,#0d1117,#1a0f05);display:flex;align-items:center;justify-content:center;">
+              <div class="sc-bg sc-bg-2">
                 <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="rgba(255,107,44,0.2)" stroke-width="1" stroke-linecap="round">
                   <rect x="4" y="2" width="16" height="20" rx="2"/>
                   <line x1="8" y1="6" x2="16" y2="6"/>
@@ -367,9 +450,9 @@
           </div>
 
           <!-- Servicio 3 -->
-          <div class="service-card reveal" style="transition-delay:0.16s;">
+          <div class="service-card reveal fade-delay-16s">
             <div class="service-card-visual">
-              <div class="sc-bg" style="background:linear-gradient(135deg,#1a1005,#0a0a0a);display:flex;align-items:center;justify-content:center;">
+              <div class="sc-bg sc-bg-3">
                 <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="rgba(255,107,44,0.2)" stroke-width="1" stroke-linecap="round">
                   <rect x="6" y="7" width="12" height="14" rx="2"/>
                   <line x1="10" y1="7" x2="10" y2="4"/>
@@ -404,7 +487,7 @@
           <!-- Servicio 4 -->
           <div class="service-card reveal">
             <div class="service-card-visual">
-              <div class="sc-bg" style="background:linear-gradient(135deg,#0a0a0a,#0d1117);display:flex;align-items:center;justify-content:center;">
+              <div class="sc-bg sc-bg-4">
                 <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="rgba(255,107,44,0.15)" stroke-width="1" stroke-linecap="round">
                   <circle cx="12" cy="12" r="3"/>
                   <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/>
@@ -429,9 +512,9 @@
           </div>
 
           <!-- Servicio 5 -->
-          <div class="service-card reveal" style="transition-delay:0.08s;">
+          <div class="service-card reveal fade-delay-08s">
             <div class="service-card-visual">
-              <div class="sc-bg" style="background:linear-gradient(135deg,#0d1117,#1a0f05);display:flex;align-items:center;justify-content:center;">
+              <div class="sc-bg sc-bg-2">
                 <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="rgba(255,107,44,0.15)" stroke-width="1" stroke-linecap="round">
                   <path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/>
                 </svg>
@@ -455,9 +538,9 @@
           </div>
 
           <!-- Servicio 6 -->
-          <div class="service-card reveal" style="transition-delay:0.16s;">
+          <div class="service-card reveal fade-delay-16s">
             <div class="service-card-visual">
-              <div class="sc-bg" style="background:linear-gradient(135deg,#1a0f05,#0a0a0a);display:flex;align-items:center;justify-content:center;">
+              <div class="sc-bg sc-bg-1">
                 <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="rgba(255,107,44,0.15)" stroke-width="1" stroke-linecap="round">
                   <path d="M2 12c2-4 6-4 8 0s6 4 8 0"/>
                   <path d="M2 17c2-4 6-4 8 0s6 4 8 0"/>
@@ -490,7 +573,7 @@
          ============================================ -->
     <section class="how" id="how">
       <span class="section-divider"></span>
-      <div class="container" style="margin-top:8rem;">
+      <div class="container section-top-spacing">
         <div class="how-header reveal">
           <span class="section-label">Proceso simple</span>
           <h2 class="section-title">Cómo <span class="gradient-text">trabajamos</span></h2>
@@ -509,7 +592,7 @@
             <p>Llámanos o escríbenos. Te atendemos directamente para entender tu necesidad.</p>
             <div class="how-connector"></div>
           </div>
-          <div class="how-step reveal" style="transition-delay:0.08s;">
+          <div class="how-step reveal fade-delay-08s">
             <div class="how-step-number">02</div>
             <div class="how-step-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--brand-500)" stroke-width="2" stroke-linecap="round">
@@ -521,7 +604,7 @@
             <p>Visitamos tu ubicación, analizamos consumo y techo. Diseñamos el sistema a medida.</p>
             <div class="how-connector"></div>
           </div>
-          <div class="how-step reveal" style="transition-delay:0.16s;">
+          <div class="how-step reveal fade-delay-16s">
             <div class="how-step-number">03</div>
             <div class="how-step-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--brand-500)" stroke-width="2" stroke-linecap="round">
@@ -532,7 +615,7 @@
             <p>Nuestro equipo instala todo en pocos días. Llave en mano, sin que te preocupes de nada.</p>
             <div class="how-connector"></div>
           </div>
-          <div class="how-step reveal" style="transition-delay:0.24s;">
+          <div class="how-step reveal fade-delay-24s">
             <div class="how-step-number">04</div>
             <div class="how-step-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--brand-500)" stroke-width="2" stroke-linecap="round">
@@ -629,7 +712,7 @@
          ============================================ -->
     <section class="benefits" id="benefits">
       <span class="section-divider"></span>
-      <div class="container" style="margin-top:8rem;">
+      <div class="container section-top-spacing">
         <div class="benefits-header reveal">
           <span class="section-label">Beneficios</span>
           <h2 class="section-title">¿Por qué pasar a la <span class="gradient-text">energía solar</span>?</h2>
@@ -643,13 +726,13 @@
             <p>Reduce tu dependencia de la factura eléctrica. La inversión se recupera en 3 a 5 años, y el resto es ahorro puro durante más de 20 años.</p>
             <div class="benefit-tag">💰 Ahorra hasta el 80% en consumo</div>
           </div>
-          <div class="benefit-card reveal" style="transition-delay:0.06s;">
+          <div class="benefit-card reveal fade-delay-06s">
             <div class="benefit-num">02</div>
             <h3>Independencia energética</h3>
             <p>No más horarios de apagones que alteran tu vida. Tu sistema genera y almacena su propia energía.</p>
             <div class="benefit-tag">🔌 Energía 24/7, con o sin red</div>
           </div>
-          <div class="benefit-card reveal" style="transition-delay:0.12s;">
+          <div class="benefit-card reveal fade-delay-12s">
             <div class="benefit-num">03</div>
             <h3>Estabilidad ante apagones</h3>
             <p>Cuando se va la luz, tu hogar sigue funcionando: refrigerador, ventiladores, luces, cargadores.</p>
@@ -661,13 +744,13 @@
             <p>Un hogar con sistema solar tiene mayor valor de mercado. Inversión que se refleja en tu vivienda.</p>
             <div class="benefit-tag">📈 Incrementa el valor de tu casa</div>
           </div>
-          <div class="benefit-card reveal" style="transition-delay:0.06s;">
+          <div class="benefit-card reveal fade-delay-06s">
             <div class="benefit-num">05</div>
             <h3>Bajo mantenimiento</h3>
             <p>Los sistemas fotovoltaicos no tienen partes móviles. Solo requieren limpieza ocasional y revisión cada 6 meses.</p>
             <div class="benefit-tag">🔧 Mantenimiento mínimo y simple</div>
           </div>
-          <div class="benefit-card reveal" style="transition-delay:0.12s;">
+          <div class="benefit-card reveal fade-delay-12s">
             <div class="benefit-num">06</div>
             <h3>Energía limpia</h3>
             <p>Contribuyes al cuidado del medio ambiente usando una fuente renovable, sin emisiones ni contaminación.</p>
@@ -682,7 +765,7 @@
          ============================================ -->
     <section class="testimonials" id="testimonials">
       <span class="section-divider"></span>
-      <div class="container" style="margin-top:8rem;">
+      <div class="container section-top-spacing">
         <div class="testimonials-header reveal">
           <span class="section-label">Testimonios</span>
           <h2 class="section-title">Lo que dicen de <span class="gradient-text">PAPOTE</span></h2>
@@ -707,7 +790,7 @@
             </div>
           </div>
 
-          <div class="testimonial-card reveal" style="transition-delay:0.08s;">
+          <div class="testimonial-card reveal fade-delay-08s">
             <div class="testimonial-stars">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--brand-500)" stroke="var(--brand-500)" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--brand-500)" stroke="var(--brand-500)" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
@@ -725,7 +808,7 @@
             </div>
           </div>
 
-          <div class="testimonial-card reveal" style="transition-delay:0.16s;">
+          <div class="testimonial-card reveal fade-delay-16s">
             <div class="testimonial-stars">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--brand-500)" stroke="var(--brand-500)" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--brand-500)" stroke="var(--brand-500)" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
@@ -752,7 +835,7 @@
     <section class="booking" id="contact">
       <span class="section-divider"></span>
       <div class="booking-glow"></div>
-      <div class="container" style="margin-top:8rem; position:relative; z-index:2;">
+      <div class="container section-top-spacing relative-z-2">
         <div class="booking-grid">
           <div class="booking-left reveal">
             <span class="section-label">Contacto</span>
@@ -823,20 +906,43 @@
           </div>
 
           <!-- Formulario -->
-          <div class="booking-form-wrap reveal" style="transition-delay:0.1s;" id="bookingFormWrap">
+          <div class="booking-form-wrap reveal fade-delay-100" id="bookingFormWrap">
             <div class="booking-form-header brand-lockup">
               <span class="brand-lockup-icon">
-                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--brand-500)" stroke-width="1.5" stroke-linecap="round">
-                  <circle cx="12" cy="12" r="4"/>
-                  <line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/>
-                  <line x1="4.22" y1="4.22" x2="6.34" y2="6.34"/><line x1="17.66" y1="17.66" x2="19.78" y2="19.78"/>
-                  <line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/>
-                  <line x1="4.22" y1="19.78" x2="6.34" y2="17.66"/><line x1="17.66" y1="6.34" x2="19.78" y2="4.22"/>
+                <svg width="30" height="30" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="pFront4" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" style="stop-color:var(--brand-400);stop-opacity:1" />
+                      <stop offset="100%" style="stop-color:var(--brand-500);stop-opacity:1" />
+                    </linearGradient>
+                    <linearGradient id="pTop4" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" style="stop-color:var(--brand-600);stop-opacity:1" />
+                      <stop offset="100%" style="stop-color:var(--brand-700);stop-opacity:1" />
+                    </linearGradient>
+                    <linearGradient id="pSide4" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" style="stop-color:var(--brand-500);stop-opacity:1" />
+                      <stop offset="100%" style="stop-color:var(--brand-600);stop-opacity:1" />
+                    </linearGradient>
+                  </defs>
+                  <g>
+                    <polygon points="12,18 24,18 24,90 12,90" fill="url(#pFront4)" stroke="#8b7355" stroke-width="0.3"/>
+                    <polygon points="12,18 20,10 32,10 24,18" fill="url(#pTop4)" stroke="#6b5444" stroke-width="0.3"/>
+                    <polygon points="24,18 32,10 32,82 24,90" fill="url(#pSide4)" stroke="#8b7355" stroke-width="0.3"/>
+                    <polygon points="24,28 56,28 56,42 24,42" fill="url(#pFront4)" stroke="#8b7355" stroke-width="0.3"/>
+                    <polygon points="24,28 32,20 64,20 56,28" fill="url(#pTop4)" stroke="#6b5444" stroke-width="0.3"/>
+                    <polygon points="56,28 64,20 64,34 56,42" fill="url(#pSide4)" stroke="#8b7355" stroke-width="0.3"/>
+                    <polygon points="56,28 68,28 68,60 56,60" fill="url(#pFront4)" stroke="#8b7355" stroke-width="0.3"/>
+                    <polygon points="56,28 64,20 76,20 68,28" fill="url(#pTop4)" stroke="#6b5444" stroke-width="0.3"/>
+                    <polygon points="68,28 76,20 76,52 68,60" fill="url(#pSide4)" stroke="#8b7355" stroke-width="0.3"/>
+                    <polygon points="56,55 68,55 68,68 56,68" fill="url(#pFront4)" stroke="#8b7355" stroke-width="0.3"/>
+                    <polygon points="56,55 64,47 76,47 68,55" fill="url(#pTop4)" stroke="#6b5444" stroke-width="0.3"/>
+                    <polygon points="68,55 76,47 76,60 68,68" fill="url(#pSide4)" stroke="#8b7355" stroke-width="0.3"/>
+                  </g>
                 </svg>
               </span>
               <span class="brand-lockup-text">
-                <span class="brand-lockup-name" style="font-size:1.25rem;"><span style="color:var(--brand-500);">PAPOTE</span></span>
-                <span class="brand-lockup-sub" style="font-size:0.625rem;letter-spacing:0.15em;">Inst. de paneles</span>
+                <span class="brand-lockup-name brand-text-about"><span class="brand-color">PAPOTE</span></span>
+                <span class="brand-lockup-sub brand-sub-about">Sistemas solares</span>
               </span>
             </div>
 
@@ -906,19 +1012,42 @@
     <div class="container">
       <div class="footer-grid">
         <div>
-          <div class="brand-lockup" style="margin-bottom:1rem;">
+          <div class="brand-lockup margin-bottom-1rem">
             <span class="brand-lockup-icon">
-              <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="var(--brand-500)" stroke-width="1.5" stroke-linecap="round">
-                <circle cx="12" cy="12" r="4"/>
-                <line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/>
-                <line x1="4.22" y1="4.22" x2="6.34" y2="6.34"/><line x1="17.66" y1="17.66" x2="19.78" y2="19.78"/>
-                <line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/>
-                <line x1="4.22" y1="19.78" x2="6.34" y2="17.66"/><line x1="17.66" y1="6.34" x2="19.78" y2="4.22"/>
+              <svg width="38" height="38" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="pFront5" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:var(--brand-400);stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:var(--brand-500);stop-opacity:1" />
+                  </linearGradient>
+                  <linearGradient id="pTop5" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:var(--brand-600);stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:var(--brand-700);stop-opacity:1" />
+                  </linearGradient>
+                  <linearGradient id="pSide5" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:var(--brand-500);stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:var(--brand-600);stop-opacity:1" />
+                  </linearGradient>
+                </defs>
+                <g>
+                  <polygon points="12,18 24,18 24,90 12,90" fill="url(#pFront5)" stroke="#8b7355" stroke-width="0.3"/>
+                  <polygon points="12,18 20,10 32,10 24,18" fill="url(#pTop5)" stroke="#6b5444" stroke-width="0.3"/>
+                  <polygon points="24,18 32,10 32,82 24,90" fill="url(#pSide5)" stroke="#8b7355" stroke-width="0.3"/>
+                  <polygon points="24,28 56,28 56,42 24,42" fill="url(#pFront5)" stroke="#8b7355" stroke-width="0.3"/>
+                  <polygon points="24,28 32,20 64,20 56,28" fill="url(#pTop5)" stroke="#6b5444" stroke-width="0.3"/>
+                  <polygon points="56,28 64,20 64,34 56,42" fill="url(#pSide5)" stroke="#8b7355" stroke-width="0.3"/>
+                  <polygon points="56,28 68,28 68,60 56,60" fill="url(#pFront5)" stroke="#8b7355" stroke-width="0.3"/>
+                  <polygon points="56,28 64,20 76,20 68,28" fill="url(#pTop5)" stroke="#6b5444" stroke-width="0.3"/>
+                  <polygon points="68,28 76,20 76,52 68,60" fill="url(#pSide5)" stroke="#8b7355" stroke-width="0.3"/>
+                  <polygon points="56,55 68,55 68,68 56,68" fill="url(#pFront5)" stroke="#8b7355" stroke-width="0.3"/>
+                  <polygon points="56,55 64,47 76,47 68,55" fill="url(#pTop5)" stroke="#6b5444" stroke-width="0.3"/>
+                  <polygon points="68,55 76,47 76,60 68,68" fill="url(#pSide5)" stroke="#8b7355" stroke-width="0.3"/>
+                </g>
               </svg>
             </span>
             <span class="brand-lockup-text">
-              <span class="brand-lockup-name footer-brand-name" style="margin-bottom:0;"><span style="color:var(--brand-500);">PAPOTE</span></span>
-              <span class="brand-lockup-sub footer-brand-sub" style="margin-bottom:0;">Instalación de paneles</span>
+              <span class="brand-lockup-name footer-brand-name"><span class="brand-color">PAPOTE</span></span>
+              <span class="brand-lockup-sub footer-brand-sub">Sistemas solares</span>
             </span>
           </div>
           <p class="footer-desc">Instalación profesional de sistemas fotovoltaicos en Cuba. La energía del sol, con garantía total.</p>
@@ -956,7 +1085,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2025 <span style="color:var(--text-muted);">PAPOTE</span> — <span style="color:var(--brand-500);opacity:0.6;">Fotovoltaica</span> · Sistemas Fotovoltaicos. Todos los derechos reservados.</p>
+        <p>© 2025 <span class="text-muted-color">PAPOTE</span> — <span class="brand-color-faded">Fotovoltaica</span> · Sistemas Fotovoltaicos. Todos los derechos reservados.</p>
         <div class="footer-bottom-links">
           <a href="#">Privacidad</a>
           <a href="#">Términos</a>

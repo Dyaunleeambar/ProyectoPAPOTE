@@ -27,7 +27,7 @@
 @import url('./sections/benefits.css');
 @import url('./sections/testimonials.css');
 @import url('./sections/booking.css');
-@import url('./sections/agendar.css');
+/* @import url('./sections/agendar.css'); — Archivo reservado para expansión futura. Descomenta si necesitas usarlo. */
 
 /* 6. Responsive — media queries al final para que sobreescriban */
 @import url('./layout/responsive.css');

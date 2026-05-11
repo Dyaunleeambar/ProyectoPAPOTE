@@ -36,17 +36,18 @@ PAPOTE/
 │   └── agendar.css               # Estilos del formulario de agendamiento (reservados para uso futuro)
 │
 └── js/
-    ├── main.js                   # ★ Punto de entrada JS — contiene toda la lógica activa
-    ├── app.js                    # Duplicado de referencia de main.js (no activo en producción)
-    ├── mobile-menu.js            # Módulo ES6 de referencia (no activo en producción)
-    ├── form.js                   # Módulo ES6 de referencia (no activo en producción)
-    ├── forms.js                  # Módulo ES6 de referencia (no activo en producción)
-    └── scroll.js                 # Módulo ES6 de referencia (no activo en producción)
+    ├── main.js                   # ★ Punto de entrada JS único — contiene toda la lógica activa
+    └── _deprecated/
+        ├── app.js                # Archivo legacy (no usar)
+        ├── form.js               # Archivo legacy (no usar)
+        ├── forms.js              # Archivo legacy (no usar)
+        ├── mobile-menu.js        # Archivo legacy (no usar)
+        └── scroll.js             # Archivo legacy (no usar)
 ```
 
 > **★ Archivo JS activo:** Toda la lógica del sitio vive en `js/main.js`. Se carga como script
 > clásico (sin `type="module"`) para compatibilidad directa con `file:///` sin necesidad de servidor local.
-> Los demás archivos `.js` son módulos ES6 de referencia disponibles si el proyecto migra a un bundler.
+> Los archivos en `_deprecated/` son código legacy. **No deben ser usados ni referenciados.**
 
 > **★ Estructura CSS plana:** Los archivos CSS están todos en `/css/` sin subdirectorios.
 > El orden de `@import` en `main.css` garantiza la cascada correcta.

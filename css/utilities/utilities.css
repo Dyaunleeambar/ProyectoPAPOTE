@@ -109,3 +109,131 @@
   background: linear-gradient(to right, transparent, rgba(255,255,255,0.08), transparent);
   margin: 0 auto;
 }
+
+/* ============================================
+   SPACING UTILITIES
+   ============================================ */
+
+.section-top-spacing {
+  margin-top: 8rem;
+}
+
+.badge-bottom-spacing {
+  margin-bottom: 2rem;
+}
+
+.mobile-cta-spacing {
+  margin-top: 1rem;
+}
+
+/* ============================================
+   COLOR UTILITIES
+   ============================================ */
+
+.brand-color {
+  color: var(--brand-500);
+}
+
+/* ============================================
+   ANIMATION DELAY UTILITIES
+   ============================================ */
+
+.fade-delay-100 {
+  transition-delay: 0.1s;
+}
+
+.fade-delay-08s {
+  transition-delay: 0.08s;
+}
+
+.fade-delay-16s {
+  transition-delay: 0.16s;
+}
+
+.fade-delay-24s {
+  transition-delay: 0.24s;
+}
+
+.fade-delay-06s {
+  transition-delay: 0.06s;
+}
+
+.fade-delay-12s {
+  transition-delay: 0.12s;
+}
+
+/* ============================================
+   TYPOGRAPHY UTILITIES
+   ============================================ */
+
+.brand-text-mobile {
+  font-size: 1.875rem;
+}
+
+.brand-sub-mobile {
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+}
+
+.brand-text-about {
+  font-size: 2rem;
+}
+
+.brand-sub-about {
+  font-size: 0.625rem;
+  letter-spacing: 0.15em;
+}
+
+.mobile-cta-button {
+  padding: 0.75rem 2rem;
+  font-size: 1.125rem;
+}
+
+/* ============================================
+   LAYOUT UTILITIES
+   ============================================ */
+
+.ping-dot {
+  position: relative;
+  display: inline-flex;
+  width: 0.625rem;
+  height: 0.625rem;
+}
+
+.ping-dot-pulse {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: var(--brand-500);
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.ping-dot-inner {
+  position: relative;
+  width: 0.625rem;
+  height: 0.625rem;
+  background: var(--brand-500);
+  border-radius: 50%;
+}
+
+/* ============================================
+   POSITIONING UTILITIES
+   ============================================ */
+
+.relative-z-2 {
+  position: relative;
+  z-index: 2;
+}
+
+.margin-bottom-1rem {
+  margin-bottom: 1rem;
+}
+
+.text-muted-color {
+  color: var(--text-muted);
+}
+
+.brand-color-faded {
+  color: var(--brand-500);
+  opacity: 0.6;
+}

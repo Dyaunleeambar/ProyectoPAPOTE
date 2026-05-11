@@ -1,5 +1,5 @@
 /* ============================================
-   SOLCUBA — MAIN SCRIPT (sin módulos ES6)
+   PAPOTE — MAIN SCRIPT (sin módulos ES6)
    Funciona abriendo index.html directamente
    desde el sistema de archivos (file:///)
    ============================================ */
@@ -89,7 +89,9 @@ function initFormValidation() {
     const ftype  = document.getElementById('ftype');
 
     if (!fname.value.trim()) { showErr(fname, 'fnameErr'); valid = false; }
-    if (fphone.value.replace(/\D/g, '').length < 8) { showErr(fphone, 'fphoneErr'); valid = false; }
+    // Validación de teléfono: entre 5 y 15 dígitos (para números cubanos e internacionales)
+    const phoneDigits = fphone.value.replace(/\D/g, '').length;
+    if (phoneDigits < 5 || phoneDigits > 15) { showErr(fphone, 'fphoneErr'); valid = false; }
     if (femail.value.trim() && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(femail.value)) {
       showErr(femail, 'femailErr'); valid = false;
     }

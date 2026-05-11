@@ -1,0 +1,60 @@
+<svg viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="frontGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5e6d3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e8d4b8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="topGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4aa5a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b8935f;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="sideGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c99e4d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a87c40;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Barra vertical izquierda -->
+  <!-- Frente -->
+  <polygon points="8,20 20,20 20,85 8,85" fill="url(#frontGrad)" stroke="#8b7355" stroke-width="0.5"/>
+  <!-- Top -->
+  <polygon points="8,20 16,12 28,12 20,20" fill="url(#topGrad)" stroke="#6b5444" stroke-width="0.5"/>
+  <!-- Lado derecho -->
+  <polygon points="20,20 28,12 28,77 20,85" fill="url(#sideGrad)" stroke="#8b7355" stroke-width="0.5"/>
+
+  <!-- Barra superior (parte del ojo de la P) -->
+  <!-- Frente -->
+  <polygon points="20,25 50,25 50,38 20,38" fill="url(#frontGrad)" stroke="#8b7355" stroke-width="0.5"/>
+  <!-- Top -->
+  <polygon points="20,25 28,17 58,17 50,25" fill="url(#topGrad)" stroke="#6b5444" stroke-width="0.5"/>
+  <!-- Lado derecho -->
+  <polygon points="50,25 58,17 58,30 50,38" fill="url(#sideGrad)" stroke="#8b7355" stroke-width="0.5"/>
+
+  <!-- Barra derecha del ojo (lado derecho de la P) -->
+  <!-- Frente -->
+  <polygon points="50,25 62,25 62,55 50,55" fill="url(#frontGrad)" stroke="#8b7355" stroke-width="0.5"/>
+  <!-- Top -->
+  <polygon points="50,25 58,17 70,17 62,25" fill="url(#topGrad)" stroke="#6b5444" stroke-width="0.5"/>
+  <!-- Lado derecho -->
+  <polygon points="62,25 70,17 70,47 62,55" fill="url(#sideGrad)" stroke="#8b7355" stroke-width="0.5"/>
+
+  <!-- Barra inferior del ojo (curva de la P - aproximada con rect) -->
+  <!-- Frente -->
+  <polygon points="50,50 62,50 62,62 50,62" fill="url(#frontGrad)" stroke="#8b7355" stroke-width="0.5"/>
+  <!-- Top -->
+  <polygon points="50,50 58,42 70,42 62,50" fill="url(#topGrad)" stroke="#6b5444" stroke-width="0.5"/>
+  <!-- Lado derecho -->
+  <polygon points="62,50 70,42 70,54 62,62" fill="url(#sideGrad)" stroke="#8b7355" stroke-width="0.5"/>
+
+  <!-- Sección curva derecha (cierre del ojo de la P) -->
+  <!-- Frente (aproximado con polígono) -->
+  <polygon points="35,38 50,38 50,55 35,55 38,48" fill="url(#frontGrad)" stroke="#8b7355" stroke-width="0.5"/>
+  <!-- Top -->
+  <polygon points="35,38 43,30 58,30 50,38" fill="url(#topGrad)" stroke="#6b5444" stroke-width="0.5"/>
+  <!-- Lado derecho -->
+  <polygon points="50,38 58,30 58,55 50,55" fill="url(#sideGrad)" stroke="#8b7355" stroke-width="0.5"/>
+
+  <!-- Sombra / Profundidad adicional -->
+  <polygon points="8,85 20,85 28,77 16,77" fill="#8b7355" opacity="0.3"/>
+  <polygon points="20,62 50,62 62,50 32,50" fill="#8b7355" opacity="0.15"/>
+</svg>

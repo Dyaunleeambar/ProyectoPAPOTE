@@ -47,6 +47,25 @@
   object-fit: cover;
   opacity: 0.5;
   transition: transform 0.7s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sc-bg-1 {
+  background: linear-gradient(135deg, #1a0f05, #0d1117);
+}
+
+.sc-bg-2 {
+  background: linear-gradient(135deg, #0d1117, #1a0f05);
+}
+
+.sc-bg-3 {
+  background: linear-gradient(135deg, #1a1005, #0a0a0a);
+}
+
+.sc-bg-4 {
+  background: linear-gradient(135deg, #0a0a0a, #0d1117);
 }
 
 .service-card:hover .sc-bg {
